@@ -1,5 +1,5 @@
 FROM centos:6.8
-MAINTAINER Loren <lei.liu5@zhezhetoo.com>
+MAINTAINER Loren <xxxxx>
 LABEL DATE='2016-07-26 15:25'
 
 # TimeZone
