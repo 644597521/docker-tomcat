@@ -31,7 +31,8 @@ RUN cd /data/soft/ && unzip jdk1.6.0_45.zip -d /usr/local
 
 # Install Tomcat
 ADD soft/apache-tomcat-6.0.43.tar.gz /data/soft/
-RUN mv /data/soft/apache-tomcat-6.0.43/* /usr/local/tomcat/ && rm -rf /usr/local/tomcat/webapps/* && rm -rf /data
+#RUN mv /data/soft/apache-tomcat-6.0.43/* /usr/local/tomcat/ && rm -rf /usr/local/tomcat/webapps/* && rm -rf /data
+RUN mv /data/soft/apache-tomcat-6.0.43/* /usr/local/tomcat/ && rm -rf /data
 
 EXPOSE 8080
 
