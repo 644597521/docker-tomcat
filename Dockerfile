@@ -41,6 +41,10 @@ RUN wget -P /data "$TOMCAT_TGZ_URL" \
 
 WORKDIR $CATALINA_HOME
 
+RUN chown -R 1001:0 $CATALINA_HOME \
+    && chmod -R ug+rw $CATALINA_HOME
+USER 1001
+
 EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
