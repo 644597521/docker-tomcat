@@ -31,7 +31,7 @@ RUN cd /data/soft/ \
 
 # Install Tomcat
 ENV TOMCAT_MAJOR 6
-ENV TOMCAT_VERSION 6.0.43
+ENV TOMCAT_VERSION 6.0.45
 ENV TOMCAT_TGZ_URL https://www.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
 RUN wget -P /data "$TOMCAT_TGZ_URL" \
     && cd /data \
